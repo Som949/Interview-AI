@@ -1,0 +1,19 @@
+4 layer architecture frontend
+
+
+UI
+=> component
+=> pages
+
+
+HOOK=>for managing state and api calls
+=> hooks
+
+STATE=> data store
+=> auth.context.jsx
+=>ai.context.jsx
+
+API
+=>services
+    => auth.api.js
+    => ai.api.js

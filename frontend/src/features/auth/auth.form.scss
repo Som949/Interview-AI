@@ -1,0 +1,148 @@
+// Paico.ai Inspired Token Profiles
+$brand-color: #8848f9;             // Deep vibrant purple accent (--color-base-purple-90)
+$brand-hover: #761cf5;             // Intense purple on active/hover interaction
+$brand-light: #f2ebff;             // Soft tinted brand wash background
+$text-main: #19191a;               // Deep crisp carbon slate for primary reading text
+$text-muted: #717273;              // Muted charcoal gray for labels and secondary details
+$input-bg: #f7f7f9;                // Clean light-gray fill texture for form controls
+$input-border: #e6e8eb;            // Subtle wireframe partition lines
+$input-focus-bg: #ffffff;          // Flips to stark white inside active inputs
+$shadow-card: 0px 9px 28px rgba(49, 50, 51, 0.05), 0px 6px 16px rgba(49, 50, 51, 0.08);
+$accent-glow: rgba(136, 72, 249, 0.12);
+$brand-dark: #8c4328;
+
+
+/* Background Architecture */
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, sans-serif; // Shifted to clean, geometric UI typography
+  background: #f9f9f9; // Flat minimalist system canvas background
+  color: $text-main;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Main Wrapper */
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Premium Light-Mode Container Card */
+.form-container {
+  width: 100%;
+  max-width: 380px; 
+  padding: 2.5rem 2rem;
+  border-radius: 12px; // Modern, flatter dashboard rounding profile
+
+  // Solid, flat material stacking over background canvas
+  background: #ffffff;
+  border: 1px solid $input-border;
+  box-shadow: $shadow-card;
+
+  // Top header text
+  h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    color: $text-main;
+  }
+
+  // Bottom text & link groupings
+  p {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: $text-muted;
+  }
+
+  a {
+    color: $brand-dark;;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $brand-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Input Form Controls Groupings */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $text-main; // Promoted to stark slate for explicit accessibility
+  }
+
+  input {
+    padding: 0.75rem 1rem;
+    border-radius: 8px; // Matching tight container radius
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: $text-main;
+    
+    // Smooth transitions for fluid interactive micro-animations
+    background: $input-bg;
+    border: 1px solid $input-border;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &::placeholder {
+      color: #a2a4a8; // Soft readable fallback placeholder text
+    }
+
+    &:hover {
+      border-color: rgba($brand-dark, 0.4);
+      background: $input-bg;
+    }
+
+    &:focus {
+      background: $input-focus-bg;
+      border-color: $brand-dark;
+      box-shadow: 0 0 0 4px $accent-glow; // Elegant soft-purple peripheral glow
+    }
+  }
+}
+
+/* High-Action Premium Button Component */
+.button.primary-button {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: $brand-dark;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &:hover {
+    background: $brand-dark;
+    box-shadow: 0px 6px 24px rgba($brand-dark, 0.2);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0); // Standard mechanical action stabilization
+  }
+}
