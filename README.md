@@ -1,81 +1,65 @@
+# 🚀 InterviewAI
 
-```
-interview ai
-├─ backend
-│  ├─ api
-│  ├─ package-lock.json
-│  ├─ package.json
-│  ├─ server.js
-│  ├─ src
-│  │  ├─ app.js
-│  │  ├─ controllers
-│  │  │  ├─ ai.controller.js
-│  │  │  ├─ auth.controller.js
-│  │  │  └─ user.controller.js
-│  │  ├─ db
-│  │  │  └─ db.js
-│  │  ├─ middlewares
-│  │  │  ├─ auth.middleware.js
-│  │  │  └─ file.middleware.js
-│  │  ├─ models
-│  │  │  ├─ blacklist.model.js
-│  │  │  ├─ interviewReport.model.js
-│  │  │  └─ user.model.js
-│  │  ├─ routes
-│  │  │  ├─ ai.routes.js
-│  │  │  └─ auth.route.js
-│  │  └─ services
-│  │     ├─ ai.service.js
-│  │     ├─ response.js
-│  │     └─ temp.js
-│  └─ test.js
-└─ frontend
-   ├─ dist
-   │  ├─ assets
-   │  │  ├─ index-CRYcTKUn.css
-   │  │  └─ index-DuxuizOx.js
-   │  ├─ favicon.svg
-   │  ├─ icons.svg
-   │  └─ index.html
-   ├─ eslint.config.js
-   ├─ index.html
-   ├─ package-lock.json
-   ├─ package.json
-   ├─ public
-   │  ├─ favicon.svg
-   │  └─ icons.svg
-   ├─ README.md
-   ├─ src
-   │  ├─ App.jsx
-   │  ├─ app.routes.jsx
-   │  ├─ features
-   │  │  ├─ auth
-   │  │  │  ├─ auth.context.jsx
-   │  │  │  ├─ auth.form.scss
-   │  │  │  ├─ components
-   │  │  │  ├─ hooks
-   │  │  │  │  └─ useAuth.js
-   │  │  │  ├─ pages
-   │  │  │  │  ├─ 4 layer architecture frontend.txt
-   │  │  │  │  ├─ Login.jsx
-   │  │  │  │  └─ Register.jsx
-   │  │  │  └─ services
-   │  │  │     ├─ auth.api.js
-   │  │  │     └─ axios.api.js
-   │  │  └─ interview
-   │  │     ├─ components
-   │  │     │  └─ InterviewLayout.jsx
-   │  │     ├─ home.scss
-   │  │     ├─ pages
-   │  │     │  ├─ Home.jsx
-   │  │     │  ├─ ReportDetails.jsx
-   │  │     │  └─ Reports.jsx
-   │  │     └─ services
-   │  │        └─ interview.api.js
-   │  ├─ main.jsx
-   │  ├─ style.scss
-   │  └─ utils
-   │     └─ ProtectedRoutes.jsx
-   └─ vite.config.js
+An AI-powered Resume Analyzer and Interview Preparation Platform that helps candidates evaluate their resumes, compare them with job descriptions, and generate personalized interview preparation reports.
 
-```
+## 🌟 Features
+
+- 📄 Resume Upload and Parsing (PDF Support)
+- 🤖 AI-Powered Resume Analysis
+- 🎯 Job Description Matching
+- 📊 Interview Readiness Report Generation
+- ❓ Personalized Technical Interview Questions
+- 📝 Answer Evaluation and Feedback
+- 🔐 User Authentication & Authorization
+- 📁 Report Storage and Retrieval
+- ☁️ Full-Stack MERN Architecture
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- React Router
+- SCSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer
+- PDF-Parse
+
+### AI Integration
+- Google Gemini API
+- Google GenAI SDK
+
+---
+
+## 📂 Project Structure
+
+```text
+InterviewAI
+│
+├── backend
+│   ├── src
+│   │   ├── controllers
+│   │   ├── routes
+│   │   ├── models
+│   │   ├── services
+│   │   ├── middleware
+│   │   └── db
+│   ├── server.js
+│   └── package.json
+│
+├── frontend
+│   ├── src
+│   ├── public
+│   ├── vite.config.js
+│   └── package.json
+│
+└── README.md
